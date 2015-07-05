@@ -1,0 +1,11 @@
+encoding: utf-8
+
+excerpt_separator: <!--more-->
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      metaTitle: "Codelamp v3 : Blog"
+      layout: default
