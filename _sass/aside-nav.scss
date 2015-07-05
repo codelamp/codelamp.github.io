@@ -1,0 +1,93 @@
+aside.nav {
+  position: fixed;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+}
+
+aside.nav .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -95%;
+  background: #000;
+  border-right: 2px dotted #fff;
+  transition: all 0.5s;
+  z-index: 2;
+  box-shadow: 0 0 20px #000;
+}
+
+aside.nav .inner:hover {
+  left: 0;
+}
+
+aside.nav .padding {
+  padding: 20px;
+}
+
+aside.nav h2 {
+  margin: 0;
+  padding: 0;
+}
+
+aside.nav .tabs {
+  position: absolute;
+  left: 100%;
+  width: 64px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside.nav .tabs li:first-child {
+  margin-top: 16px;
+}
+
+aside.nav .tabs .icon-posts {
+  padding: 5px;
+  background: #000 url(/images/book.svg) no-repeat;
+  background-position: 11px 11px;
+  background-size: 42px 42px;
+  width: 64px;
+  height: 64px;
+  color: transparent;
+  overflow: hidden;
+  text-indent: -99em;
+  border-top: 2px dotted #fff;
+  border-right: 2px dotted #fff;
+  border-bottom: 2px dotted #fff;
+  box-shadow: 0 0 20px #000;
+}
+
+aside.nav section.recent-posts {
+  margin: 0;
+}
+
+aside.nav section.recent-posts h2 {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+aside.nav section.recent-posts h2:first-of-type {
+  margin-top: 0;
+}
+
+section.recent-posts li.nav-link,
+section.recent-posts li.post-link {
+  margin-bottom: 0.3em;
+}
+
+section.recent-posts li.nav-link a,
+section.recent-posts li.post-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.recent-posts li.nav-link a:hover,
+section.recent-posts li.post-link a:hover {
+  color: orange;
+}

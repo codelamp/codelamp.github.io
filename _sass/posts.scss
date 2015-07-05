@@ -1,0 +1,32 @@
+/**
+ * Posts
+ */
+
+ul.navigation-links,
+ul.recent-posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.post-excerpt {
+  position: relative;
+  padding: 40px;
+}
+
+li.post-excerpt::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.read-more {
+  background: orange;
+  border-radius: 10px;
+  float: right;
+  display: block;
+  padding: 10px 16px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}

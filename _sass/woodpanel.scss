@@ -1,0 +1,129 @@
+/**
+ * WOOD PANEL
+ */
+
+.wood-panel {
+  position: absolute;
+  display: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  -o-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  top: 0;
+  bottom: 0;
+}
+
+.wood-panel.panel-inset::before,  
+.wood-panel.panel-outset::before {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 22px;
+  display: block;
+  content: '';
+  background: #000 url('/images/woodpanel/topmost.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.wood-panel.panel-outset {
+  overflow: hidden;
+  max-width: 366px;
+  background: #000 url('/images/woodpanel/middlerepeat.png') repeat-y scroll top left;
+  background-size: 100% 100%;
+}
+
+.wood-panel.panel-inset {
+  overflow: hidden;
+  max-width: 366px;
+  background: #000 url('/images/woodpanel/middledark.png') repeat-y scroll top left;
+  background-size: 100% 100%;
+}
+
+.wood-panel.panel-outset::after {
+  overflow: hidden;
+  position: relative;
+  height: 18px;
+  display: block;
+  content: '';
+  background: #000 url('/images/woodpanel/bottommost.png') no-repeat scroll top left;
+  background-size: 100% 100%;
+}
+
+.wood-panel.panel-inset::after {
+  overflow: hidden;
+  height: 18px;
+  display: block;
+  content: '';
+  background: #000 url('/images/woodpanel/bottommost.png') no-repeat scroll top left;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wood-panel .wood-inner {
+  position: relative;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: hidden;
+  min-height: 80px;
+}
+
+.wood-panel .wood-inner.size-to-content {
+  -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -o-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.panel-outset .wood-inner::before {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  display: block;
+  content: '';
+  background: url('/images/woodpanel/topinner.png') no-repeat scroll top left;
+  background-size: 100% 100%;
+}
+
+.panel-outset .wood-inner::after {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  display: block;
+  content: '';
+  background: url('/images/woodpanel/bottominner.png') no-repeat scroll top left;
+  background-size: 100% 100%;
+}
+
+.wood-content {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.wood-content,
+.wood-content a {
+  color: #fff;
+}
