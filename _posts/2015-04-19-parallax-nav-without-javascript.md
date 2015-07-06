@@ -1,7 +1,9 @@
 ---
 title: "Horizontal parallax navigation, but without the JavaScript"
+description: "A technical article detailing the basics behind the CSS-based parallax system used in the creation of Codelamp v3"
 layout: default
 metaSubTitle: "Horizontal parallax navigation, but without the JavaScript"
+pid: "parallax-nav-without-javascript"
 ---
 
 {: .header-image}

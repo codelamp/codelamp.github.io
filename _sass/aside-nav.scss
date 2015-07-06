@@ -14,13 +14,8 @@ aside.nav .inner {
   left: -95%;
   background: #000;
   border-right: 2px dotted #fff;
-  transition: all 0.5s;
   z-index: 2;
   box-shadow: 0 0 20px #000;
-}
-
-aside.nav .inner:hover {
-  left: 0;
 }
 
 aside.nav .padding {
@@ -41,24 +36,39 @@ aside.nav .tabs {
   padding: 0;
 }
 
-aside.nav .tabs li:first-child {
-  margin-top: 16px;
-}
-
-aside.nav .tabs .icon-posts {
-  padding: 5px;
-  background: #000 url(/images/book.svg) no-repeat;
-  background-position: 11px 11px;
-  background-size: 42px 42px;
+aside.nav .tabs .tab-icon {
+  position: relative;
   width: 64px;
   height: 64px;
   color: transparent;
   overflow: hidden;
-  text-indent: -99em;
   border-top: 2px dotted #fff;
   border-right: 2px dotted #fff;
   border-bottom: 2px dotted #fff;
   box-shadow: 0 0 20px #000;
+}
+
+aside.nav .tabs .tab-icon a {
+  display: block;
+  text-indent: -99em;
+  width: 100%;
+  height: 100%;
+}
+
+aside.nav .tabs .icon-posts {
+  margin-top: 16px;
+}
+
+aside.nav .tabs .icon-posts a {
+  background: #000 url(/images/book.svg) no-repeat;
+  background-position: 9px 10px;
+  background-size: 42px 42px;
+}
+
+aside.nav .tabs .icon-posts-close a {
+  background: #000 url(/images/close.svg) no-repeat;
+  background-position: 9px 10px;
+  background-size: 42px 42px;
 }
 
 aside.nav section.recent-posts {
@@ -68,8 +78,8 @@ aside.nav section.recent-posts {
 aside.nav section.recent-posts h2 {
   font-size: 1em;
   color: #fff;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 aside.nav section.recent-posts h2:first-of-type {
@@ -90,4 +100,63 @@ section.recent-posts li.post-link a {
 section.recent-posts li.nav-link a:hover,
 section.recent-posts li.post-link a:hover {
   color: orange;
+}
+
+section.recent-posts li.nav-link.current a,
+section.recent-posts li.post-link.current a {
+  color: #8abeef;
+}
+
+section.recent-posts li.nav-link .date,
+section.recent-posts li.post-link .date {
+  display: inline-block;
+  margin-right: 8px;
+  text-style: italic;
+  color: black;
+  background: #8abeef;
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.8em;
+}
+
+section.recent-posts li.nav-link a:hover .date,
+section.recent-posts li.post-link a:hover .date {
+  background: orange;
+}
+
+/**
+ * Transitions
+ */
+
+body.transitions-enabled aside.nav .inner {
+  transition: all 0.5s;
+}
+
+/**
+ * :target changes
+ */
+
+.target-wrapper {
+  overflow: hidden;
+}
+
+#target-posts:target aside.nav .inner {
+  left: 0;
+}
+
+aside.nav .tabs .icon-posts-close {
+  display: none;
+}
+
+#target-posts:target aside.nav .tabs .icon-posts-close {
+  display: block;
+}
+
+#target-posts:target aside.nav .tabs .icon-posts {
+  display: none;
+}
+
+#target-posts:target aside.nav .tabs .icon-posts-close {
+  margin-top: 16px;
 }

@@ -13,7 +13,8 @@ body {
 }
 
 section.content,
-section.recent-posts {
+section.recent-posts,
+section.comments {
   position: relative;
   max-width: 800px;
   margin: 90px auto;
@@ -22,7 +23,8 @@ section.recent-posts {
 }
 
 section.content,
-section.recent-posts li.post-excerpt {
+section.recent-posts li.post-excerpt,
+section.comments {
   position: relative;
   background: #fff;
   box-shadow: 0 0 10px #000;
@@ -30,7 +32,8 @@ section.recent-posts li.post-excerpt {
 }
 
 section.content .padding,
-section.recent-posts .padding {
+section.recent-posts .padding,
+section.comments .padding {
   padding: 70px;
 }
 

@@ -1,0 +1,35 @@
+<aside class="nav">
+  <div class="inner">
+    <ul class="tabs">
+      <li class="tab-icon icon-posts">
+        <a href="#target-posts">Posts</a>
+      </li>
+      <li class="tab-icon icon-posts-close">
+        <a href="#">Close Posts</a>
+      </li>
+    </ul>
+    <header>
+      <a href="/"><img src="/images/blog-header.png" width="300" /></a>
+    </header>
+    <div class="padding">
+      <section class="recent-posts">
+        <h2>Navigation</h2>
+        <ul class="navigation-links">
+          <li class="nav-link"><a href="/">- Homepage</a></li>
+          <li class="nav-link"><a href="http://codelamp.uk">- Main website</a></li>
+        </ul>
+        <h2>Recent Posts</h2>
+        <ul class="recent-posts">
+        {% for post in site.posts %}
+          <li class="post-link{% if post.url == page.url %} current{% endif %}">
+            <a href="{{ post.url }}#target-posts">
+              <span class="date">{{ post.date | date: "%Y %B" }}</span>
+              <span class="title">{{ post.title }}</span>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,21 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@media screen and (max-width: 800px) {
+
+  section.content,
+  section.recent-posts,
+  section.comments {
+    margin: 20px auto;
+    max-width: none;
+  }
+  
+  section.content h2.date,
+  section.recent-posts h2.date {
+    left: auto;
+    right: 0;
+  }
+
+}

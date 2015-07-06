@@ -2,54 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-{% if page.metaTitle and page.metaSubTitle %}
-<title>{{ page.metaTitle }} | {{ page.metaSubTitle }}</title>
-{% elsif page.metaTitle %}
-<title>{{ page.metaTitle }}</title>
-{% else %}
-<title>Codelamp Blog</title>
-{% endif %}
+{% if page.metaTitle and page.metaSubTitle %}<title>{{ page.metaTitle }} | {{ page.metaSubTitle }}</title>{% elsif page.metaTitle %}<title>{{ page.metaTitle }}</title>{% else %}<title>Codelamp Blog</title>{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% if page.description %}
-<meta name="description" content="{{ page.description }}" />
-{% elsif site.description %}
-<meta name="description" content="{{ site.description }}" />
-{% endif %}
+{% if page.description %}<meta name="description" content="{{ page.description }}" />{% elsif site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
 <link type="text/css" rel="stylesheet" href="/css/core.css" media="screen" />
-</style>
+<link type="text/css" rel="stylesheet" href="/css/responsive.css" media="screen" />
 </head>
-<body>
+<body id="body">
+<div id="target-posts" class="target-wrapper">
   {% include header.html %}
-  <aside class="nav">
-    <div class="inner">
-      <ul class="tabs">
-        <li class="icon-posts">Posts</li>
-      </ul>
-      <header>
-        <img src="/images/blog-header.png" width="300" />
-      </header>
-      <div class="padding">
-        <section class="recent-posts">
-          <h2>Navigation</h2>
-          <ul class="navigation-links">
-            <li class="nav-link"><a href="/">- Homepage</a></li>
-            <li class="nav-link"><a href="http://codelamp.uk">- Main website</a></li>
-          </ul>
-          <h2>Recent Posts</h2>
-          <ul class="recent-posts">
-          {% for post in site.posts %}
-            <li class="post-link"><a href="{{ post.url }}">- {{ post.title }}</a></li>
-          {% endfor %}
-          </ul>
-        </section>
-      </div>
-    </div>
-  </aside>
+  {% include sidebar.html %}
   <section class="content">
     <div class="padding">
       <div>{{ content }}</div>
     </div>
   </section>
   {% include footer.html %}
+</div>
+<script>
+document.getElementById('body').className = 'transitions-enabled';
+</script>
 </body>
 </html>

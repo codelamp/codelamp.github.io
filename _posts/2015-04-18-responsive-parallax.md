@@ -2,6 +2,7 @@
 title: "Developing fullscreen responsive horizontal parallax, with navigable depth."
 layout: default
 metaSubTitle: "Developing fullscreen responsive horizontal parallax, with navigable depth."
+pid: "responsive-parallax"
 ---
 
 {: .header-image}

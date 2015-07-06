@@ -2,20 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-{% if page.metaTitle and page.metaSubTitle %}
-<title>{{ page.metaTitle }} | {{ page.metaSubTitle }}</title>
-{% elsif page.metaTitle %}
-<title>{{ page.metaTitle }}</title>
-{% else %}
-<title>Codelamp Blog</title>
-{% endif %}
+{% if page.metaTitle and page.metaSubTitle %}<title>{{ page.metaTitle }} | {{ page.metaSubTitle }}</title>{% elsif page.metaTitle %}<title>{{ page.metaTitle }}</title>{% else %}<title>Codelamp Blog</title>{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% if page.description %}
-<meta name="description" content="{{ page.description }}" />
-{% elsif site.description %}
-<meta name="description" content="{{ site.description }}" />
-{% endif %}
+{% if page.description %}<meta name="description" content="{{ page.description }}" />{% elsif site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
 <link type="text/css" rel="stylesheet" href="/css/core.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/css/responsive.css" media="screen" />
 </head>
 <body>
   {% include header.html %}
