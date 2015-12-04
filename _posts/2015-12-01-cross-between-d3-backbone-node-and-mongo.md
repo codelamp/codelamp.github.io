@@ -101,7 +101,6 @@ So now I create a new Animation in my ExitGuy Animator UI, and instantly the dat
 
 Building this before Node, I would have opted for either Python or PHP. Both of which would have definitely taken significantly longer.
 
-
 ## The next steps?
 
 For now the system is still basic but it is demo-able. Here is part of the UI ripped out, just to give a feel for what I'm talking about. The real system will go live once it is fully ready.
@@ -120,7 +119,14 @@ I wanted a controllable (and programmable) animation environment precisely becau
 4. Creating a look-up matrix of which animations can seamlessly blend to others.
 5. Creating a look-up matrix of which animations should be used when encountering an enemy figure's animation.
 
-Out of all my research I couldn't find an existing animation system that had these abilities, so I created my own. It may seem like a lot of work, but when you've been contemplating making a game that attempts to reproduce at least some of the following, you need all the power you can get:
+Out of all my research I couldn't find an existing animation system that had these abilities, so I created my own. 
+Once the data has been generated it will map towards an animated character much like what is shown below:
+
+<div style="border: 10px solid white; border-radius: 20px; box-shadow: 0 0 10px 10px rgba(0,0,0,0.1); margin-top: 50px; margin-bottom: 50px;">
+  <img alt="Exit Advert" src="/images/exit-ad.jpg" width="100%" />
+</div>
+
+All this may seem like a lot of work, but when you've been contemplating making a game that attempts to reproduce at least some of the following, you need all the power you can get:
 
 <br /><br />
 <center>

@@ -144,5 +144,16 @@ blockquote.note {
   height: auto;
 }
 
+.side-image {
+  float: right;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+  margin-left: 40px;
+}
+
+.side-image img {
+  max-width: 250px;
+}
+
 @import "aside-nav";
 @import "posts";
