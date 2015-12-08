@@ -66,7 +66,7 @@ Vector is not without its downsides however. When using rastered art, it is easy
 
 When dealing with raster animations, it can be quite easy to specify hit-areas. These are usually implemented as square or polygon regions that can be animated along with the character. The problem is that it takes time to add them in.
 
-With E.X.I.T. I hope to generate the hit-areas by specifying what which nodes of the character can cause a collision, and what nodes of a character can be involved in a collision. From there I will compute where collisions can occur without too many problems. In terms of animating, I just have to turn on or off this ability for certain nodes at certain points... no further effort required.
+With E.X.I.T. I hope to generate the hit-areas by specifying which nodes of the character can cause a collision, and which nodes of a character can be involved in a collision. From there I will compute where collisions can occur without too many problems. In terms of animating, I just have to turn on or off this ability for certain nodes at certain points... no further effort required.
 
 This also will help with the next point.
 
