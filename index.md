@@ -17,7 +17,7 @@ One of my key gripes with a lot of the large scale projects I've worked on over 
 
 Drupal is a great example of this, and has always been my main reason for disliking CMSs to that of bespoke coded systems. The last three Drupal sites I have worked on, have been so heavily cached, that there was almost no point in having a dynamic site in the first place.
 
-The problem with caching is that in my experience it causes almost the same number of issues as it solves, just in different areas. And this issues it does cause tend to be a lot more cryptic. Basically, rather than having a site that may crash if there are too many requests, you instead have a site that becomes a pain to develop for.
+The problem with caching is that in my experience it causes almost the same number of issues as it solves, just in different areas. Not to mention that the issues it does cause, tend to be a lot more cryptic. Basically, rather than having a site that may crash if there are too many requests, you instead have a site that becomes a pain to develop for.
 
 This is why my preference for any type of content managing system has always been towards that of a "publishing" process. Meaning that you manage your content using whatever clever tools you can put together, but the site that your users view is always a static generated version — or at least as static as possible. This way your site is as simple and optimal as possible in terms of being served to your users. At most you may wish to opt for some edge-caching for your assets, but that is about it.
 
