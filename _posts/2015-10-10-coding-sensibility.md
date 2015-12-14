@@ -26,7 +26,7 @@ This may sound a strange thing to say, especially to those who may place Blacksm
 
 When dealing with any aspect of a system, you get to know that part of the system well.&nbsp; And my brain particularly responds well to focusing on particular areas until they feel "right". The sense of correctness is rather difficult to explain, but it seems to come out of aligning whatever I am currently working on, with its specifications, against a backdrop of "contemporary" best practices; for that whichever language I am using.
 
-This process ties heavily in with the way my memory behaves, so it could be quite different for other people.
+This process ties in heavily with the way my memory behaves, so it could be quite different for other people.
 
 The way my memory works, in terms of coding, is very much split across short term and long term. It really does take a while for me to forget code that I have worked on, however, it does not take long at all for me to forget how I can safely rework / rearrange / refactor the code without causing issues or missing something.
 
