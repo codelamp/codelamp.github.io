@@ -8,6 +8,7 @@
 <link type="text/css" rel="stylesheet" href="/css/core.css" media="screen" />
 <link type="text/css" rel="stylesheet" href="/css/responsive.css" media="screen" />
 <link rel="icon" href="favicon.png" type="image/png" />
+{% include syntax-head.html %}
 </head>
 <body id="body">
 <div id="target-posts" class="target-wrapper">
@@ -20,8 +21,7 @@
   </section>
   {% include footer.html %}
 </div>
-<script>
-document.getElementById('body').className = 'transitions-enabled';
-</script>
+<script>document.getElementById('body').className = 'transitions-enabled';</script>
+{% include syntax-foot.html %}
 </body>
 </html>

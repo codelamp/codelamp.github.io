@@ -125,6 +125,12 @@ section.recent-posts li.post-link a:hover .date {
   background: orange;
 }
 
+section.recent-posts li.nav-link .date,
+section.recent-posts li.post-link .date {
+  font-family: monospace;
+  font-weight: bold;
+}
+
 /**
  * Transitions
  */

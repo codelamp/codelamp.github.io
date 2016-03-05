@@ -8,10 +8,11 @@
 <link type="text/css" rel="stylesheet" href="/css/core.css" media="screen" />
 <link type="text/css" rel="stylesheet" href="/css/responsive.css" media="screen" />
 <link rel="icon" href="favicon.png" type="image/png" />
+{% include syntax-head.html %}
 </head>
 <body>
   {% include header.html %}
-  <section class="content">
+  <section class="intro">
     <div class="padding">
       <div>{{ content }}</div>
     </div>
@@ -27,5 +28,6 @@
     </ul>
   </section>
   {% include footer.html %}
+  {% include syntax-foot.html %}
 </body>
 </html>

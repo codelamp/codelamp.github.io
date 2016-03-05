@@ -23,7 +23,7 @@
         {% for post in site.posts %}
           <li class="post-link{% if post.url == page.url %} current{% endif %}">
             <a href="{{ post.url }}#target-posts">
-              <span class="date">{{ post.date | date: "%Y %B" }}</span>
+              <span class="date">{{ post.date | date: "%Y %b" }}</span>
               <span class="title">{{ post.title }}</span>
             </a>
           </li>
