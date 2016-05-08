@@ -2,7 +2,12 @@
 <script src="/js/jquery.easytabs.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
-jQuery('div.use-easytabs').easytabs({
-  animate: false
+jQuery('div.use-easytabs').each(function(){
+  var element = jQuery(this);
+  element.easytabs({
+    collapsible: element.is('.easytabs-collapsed'),
+    collapsedByDefault: element.is('.easytabs-collapsed'),
+    animate: false
+  });
 });
 </script>

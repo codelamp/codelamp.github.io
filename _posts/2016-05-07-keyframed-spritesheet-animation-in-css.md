@@ -57,16 +57,18 @@ If you are interested, just fire up your net inspector. You will see each of Ann
 
 This preprocessing allows for additional abilities that were not available in my previous attempts. You can already see directly one of these abilities, in the fact that the reflection in the example below is another generated sprite-sheet. Created at the same time as the original animation sprite-sheet, but with effects and translation applied. Pretty cool I think.
 
-<div class="use-easytabs">
+<em>Click one of the tabs below to see an example of the system at work.</em>
+
+<div class="use-easytabs easytabs-collapsed">
   <ul class="nav nav-tabs">
     <li class=""><a href="#iframe-steps">With steps()</a></li>
-    <li class=""><a href="#iframe-nosteps" class="">Without steps()</a></li>
+    <li class=""><a href="#iframe-nosteps">Without steps()</a></li>
   </ul>
   <div class="panels" style="">
-    <div id="iframe-steps" style="display: block;" class="active">
+    <div id="iframe-steps" style="display: block;">
       <iframe src="http://codelamp.co.uk/blog/generation/index.html" style="width: 100%; height: 150px;" scrolling="no"></iframe>
     </div>
-    <div id="iframe-nosteps" style="display: none; position: static; visibility: visible;" class="">
+    <div id="iframe-nosteps" style="display: none; position: static; visibility: visible;">
       <iframe src="http://codelamp.co.uk/blog/generation/index.html?nosteps=1" style="width: 100%; height: 150px;" scrolling="no"></iframe>
     </div>
   </div>
