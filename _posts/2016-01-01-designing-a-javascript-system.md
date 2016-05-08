@@ -2,7 +2,7 @@
 title: "Designing a JavaScript library"
 layout: default
 metaSubTitle: "Designing a JavaScript library"
-pid: "desing-javascript-library"
+pid: "design-javascript-library"
 ---
 
 {: .header-image}
@@ -87,7 +87,7 @@ This is due to the way we have built our Constructor, we've implemented a shared
 
 This means that across `salmonOfDoubt` and `h2g2` the pages array is the same.
 
-This is a fundamental difference between many class-based languages and JavaScript. When you define properties for the "structures" that you will derived instances from, in the class world, these properties are recreated for each instance of the class. In JavaScript, they are just one-off properties attached to an object, and these properties are inherited down the prototype chain.
+This is a fundamental difference between many class-based languages and JavaScript. When you define properties for the "structures" that you will derived instances from, in the class world, these properties are recreated for each instance of the class (unless statically defined). In JavaScript, they are just one-off properties attached to an object, and these properties are inherited down the prototype chain.
 
 You can obviously fix this issue in JavaScript, by doing anything similar to the following:
 
@@ -143,6 +143,6 @@ Which is true in terms of unique references. But the principal behind Theory's C
 
 There are other benefits to having `.i` too. It makes reusing instances easier.
 
-In certain circumstances it is preferable to keep a pool of already created objects, which are recycled, rather than relying on continually garbage collecting. With Theory, in a well designed Creator, all you need to do is replace, re-initialise or copy the `.i` property to reset or clone an instance. True, this is still consigning an object to be garbage collected, however the unique properties are usually a subset -- compared to the number methods. If you also include that some objects can take a bit to set-up, you save all this processing work.
+In certain circumstances it is preferable to keep a pool of already created objects, which are recycled, rather than relying on continually garbage collecting. With Theory, in a well designed Creator, all you need to do is replace, re-initialise or copy the `.i` property to reset or clone an instance. True, this is still consigning an object to be garbage collected, however the unique properties are usually a subset -- compared to the number of methods. If you also include that some objects can take a bit to set-up, you save all this processing work.
 
 To be continued ...

@@ -2,7 +2,7 @@
 title: "Designing a fluid character animation system"
 layout: default
 metaSubTitle: "Fluid animation"
-pid: "desing-fluid-animation"
+pid: "design-fluid-animation"
 ---
 
 {: .header-image}
@@ -28,7 +28,7 @@ Ok, so first up, as with any system I need to be clear on what the issues are. I
 
 This is a made up technical sounding name for "What to do when the animation suddenly needs to change". This obviously occurs a lot, especially with a high-collision game like that I am hoping to build. There are four common solutions to this issue:
 
-1. **Create enough animations that you have almost every conceivable break in the animation accounted for** &mdash; For example, you have a running animation, and you would like to add an animation whereby the character running can hit their head. Here, because you have holistic frames, you would have to animate the head collision animation at multiple points through the running animation. This is because the character can hit their head at any frame whilst running. This obviously works as a solution, but the amount of animations that need to be constructed can end up being unsurmountable.
+1. **Create enough animations that you have almost every conceivable break in the animation accounted for** &mdash; For example, you have a running animation, and you would like to add an animation whereby the character running can hit their head. Here, because you have holistic frames, you would have to animate the head collision animation at multiple points through the running animation. This is because the character can hit their head at any frame whilst running. This obviously works as a solution, but the amount of animations that need to be constructed can end up being insurmountable.
 
 2. **Don't worry about it** &mdash; many games employ this. Whether it works due to their chosen style, or just doesn't work and the animation is choppy. It is a solution. For many games it doesn't really matter if the animation is disrupted. It is far more important that the animation doesn't overrule the user's control system.
 

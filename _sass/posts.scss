@@ -30,3 +30,14 @@ li.post-excerpt::after {
   color: white;
   text-decoration: none;
 }
+
+a.external {
+  color: darkorange;
+  text-decoration: none;
+}
+
+a.external:hover,
+a.external:active {
+  color: red;
+  text-decoration: underline;
+}
