@@ -14,3 +14,6 @@ defaults:
     values:
       metaTitle: "Codelamp v3 : Blog"
       layout: default
+
+gems:
+  - jekyll-sitemap
