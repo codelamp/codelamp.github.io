@@ -73,3 +73,30 @@ This preprocessing allows for additional abilities that were not available in my
     </div>
   </div>
 </div>
+
+## Code API
+
+The nice thing with this implementation is the fact that to switch/enqueue animations I can just call the following. Having an easy to read, and easy to us API, is going to be key — considering there will be some live action "intro" and "outros" where the animation will need to be "hand" coded.
+
+    annabell.sprite.play(
+      'Standing', 1000,
+      'StandingToRun',
+      'RunLoop', 'RunLoop', 'RunLoop',
+      'RunToSkid', 'SkidToTurn',
+      annabell.sprite.turnLeft,
+      'StandingToRun', 'RunLoop', 'RunLoop',
+      'RunToRoll', 'RollLoop', 'RollLoop',
+      'RollToRun', 'RunLoop', 'RunEndToCollision',
+      'Standing', 1000,
+      'StandingToCrouch', 1000,
+      'RollLoop',
+      'RollToStanding',
+      'StandingToPush',
+      'PushLoop', 'PushLoop','PushLoop',
+      'Standing', 1000,
+      'StandingToPull',
+      'PullLoop', 'PullLoop', 'PullLoop',
+      'Standing', 1000
+    );
+
+I did start off building this system as a generalised extension to jQuery. But I think I will move away from that.
