@@ -16,13 +16,14 @@
         <h2>Navigation</h2>
         <ul class="navigation-links">
           <li class="nav-link"><a href="/">- Homepage</a></li>
-          <li class="nav-link"><a href="http://codelamp.uk">- Main website</a></li>
+          <li class="nav-link"><a href="http://v4.codelamp.co.uk">- v4 website</a></li>
+          <li class="nav-link"><a href="http://codelamp.uk">- v3 website</a></li>
         </ul>
         <h2>Recent Posts</h2>
         <ul class="recent-posts">
         {% for post in site.posts %}
           <li class="post-link{% if post.url == page.url %} current{% endif %}">
-            <a href="{{ post.url }}#target-posts">
+            <a href="{{ post.url }}#target-posts" title="{{ post.title }}">
               <span class="date">{{ post.date | date: "%Y %b" }}</span>
               <span class="title">{{ post.title }}</span>
             </a>

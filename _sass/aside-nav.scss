@@ -1,10 +1,11 @@
 aside.nav {
   position: fixed;
-  width: 300px;
+  width: 400px;
   margin: 0;
   padding: 0;
   top: 0;
   bottom: 0;
+  z-index: 200;
 }
 
 aside.nav .inner {
@@ -86,8 +87,14 @@ aside.nav section.recent-posts h2:first-of-type {
   margin-top: 0;
 }
 
+section.recent-posts {
+  overflow: hidden;
+}
+
 section.recent-posts li.nav-link,
 section.recent-posts li.post-link {
+  white-space: nowrap;
+  font-size: 9pt;
   margin-bottom: 0.3em;
 }
 

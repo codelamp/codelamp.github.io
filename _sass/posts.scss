@@ -41,3 +41,14 @@ a.external:active {
   color: red;
   text-decoration: underline;
 }
+
+a.internal {
+  color: #009bb8;
+  text-decoration: none;
+}
+
+a.internal:hover,
+a.internal:active {
+  color: #004b59;
+  text-decoration: underline;
+}
