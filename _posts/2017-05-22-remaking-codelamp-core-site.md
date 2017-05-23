@@ -108,6 +108,8 @@ Here is a slightly optimised version, with less CSS (and less less), but more js
 
 v4 is the first of my personal websites to benefit from a build process (if you ignore this blog, which is run through Jekyll). I did test around with Gulp for a bit, but actually decided just to stick with npm and specifically built bash scripts, at least for v4. This has led to a hierarchy, where the main site's build process triggers off the microsites processes — which seems to work quite nicely, at least for this size of site.
 
+<script type="text/javascript" src="https://asciinema.org/a/6z4dvtv9eehbk4mk9yxe6j6vi.js" id="asciicast-6z4dvtv9eehbk4mk9yxe6j6vi" async></script>
+
 Some of my microsites are using Browserify to bundle things up, which I quite like, and others are using Babel to transpile future JavaScript to current JavaScript (which I still find creepy).
 
 One step I haven't yet finalised however is the no-js build for the main site. Previously v3 worked whether you had JavaScript or not, v4 however will only work with JS-enabled. The site itself however, has been designed to work without JS, I just need to finalise the build so that the final index.html is running the right includes and initial class names. Once that is complete, you'll be able to navigate the site (in full CSS parallax) without any fancy runtimes.
@@ -115,6 +117,8 @@ One step I haven't yet finalised however is the no-js build for the main site. P
 ## Hosting
 
 V4 is the first of my sites to be hosted with Google Cloud. I did so just to get up-to-speed with what they are offering, so that I can advise future clients. So far I have been impressed with the sheer amount of "extras" that are available. I'm really hoping I get some more free time this year so I can try a few of their special features out.
+
+![Gc Banner](/images/gc-banner.png){:.max-width .margin}
 
 For now though at least, I'm happy in that just like with my previous Heroku builds, and GitHub/Jekyll builds, I can merge down to master and push — and within a minute, the latest changes are live with an impressive set of admin tools and stats.
 
