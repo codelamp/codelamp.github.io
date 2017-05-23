@@ -1,5 +1,5 @@
 ---
-title: "Remaking Codelamps' core website"
+title: "Remaking Codelamp's core website"
 layout: default
 metaSubTitle: "Remaking Codelamp's core website"
 pid: "codelamp-v4"
