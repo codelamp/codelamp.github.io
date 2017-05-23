@@ -20,9 +20,11 @@ pid: "codelamp-v4"
 
 This is the reason why the site is divided into the presentation framework (the parallax navigation), and the content — which is presented in minisites.
 
-This is so that for v5 I can switch in a new presentation framework, which you can already see hints of in the headers of the minisites.
+This is so that for v5 I can switch in a new presentation framework, which you can already see hints of in the headers of the minisites. You can be sure this time, it won't be Parallax.
 
 It also explains why half the site is written using web components, and the other half with a bespoke JavaScript build.
+
+Visit the site here: [Codelamp Version 4](http://v4.codelamp.co.uk){:.external}
 
 ## Refactoring
 
@@ -101,3 +103,22 @@ Here is a slightly optimised version, with less CSS (and less less), but more js
 
 <p data-height="265" data-theme-id="0" data-slug-hash="ybQodK" data-default-tab="result" data-user="codelamp" data-embed-version="2" data-pen-title=".hover-grid v2" class="codepen">See the Pen <a href="https://codepen.io/codelamp/pen/ybQodK/">.hover-grid v2</a> by Phil Glanville (<a href="https://codepen.io/codelamp">@codelamp</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+## Build process
+
+v4 is the first of my personal websites to benefit from a build process (if you ignore this blog, which is run through Jekyll). I did test around with Gulp for a bit, but actually decided just to stick with npm and specifically built bash scripts, at least for v4. This has led to a hierarchy, where the main site's build process triggers off the microsites processes — which seems to work quite nicely, at least for this size of site.
+
+Some of my microsites are using Browserify to bundle things up, which I quite like, and others are using Babel to transpile future JavaScript to current JavaScript (which I still find creepy).
+
+One step I haven't yet finalised however is the no-js build for the main site. Previously v3 worked whether you had JavaScript or not, v4 however will only work with JS-enabled. The site itself however, has been designed to work without JS, I just need to finalise the build so that the final index.html is running the right js-includes. Once that is complete, you'll be able to navigate the site (in full CSS parallax) without any fancy runtimes.
+
+## Hosting
+
+V4 is the first of my sites to be hosted with Google Cloud. I did so just to get up-to-speed with what they are offering, so that I can advise future clients. So far I have been impressed with the sheer amount of "extras" that are available. I'm really hoping I get some more free time this year so I can try a few of their special features out.
+
+For now though at least, I'm happy in that just like with my previous Heroku builds, and GitHub/Jekyll builds, I can merge down to master and push — and within a minute, the latest changes are live with an impressive set of admin tools and stats.
+
+Once thing that is still irking me however, and I guess this comes with running on the ambiguous "cloud" — and especially a cloud system with a complex interface — but I can't find what technology is currently powering my "static" v4 site. Before, I've always been fully aware. This is an Apache/PHP stack here, that one is a Heroke/Node buildpack, other there... the one on Google, in that container... erm, well I think it runs on a mixture of Go, Lisp and luck.
+
+
+... to be continued ...
