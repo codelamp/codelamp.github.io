@@ -110,7 +110,7 @@ v4 is the first of my personal websites to benefit from a build process (if you 
 
 Some of my microsites are using Browserify to bundle things up, which I quite like, and others are using Babel to transpile future JavaScript to current JavaScript (which I still find creepy).
 
-One step I haven't yet finalised however is the no-js build for the main site. Previously v3 worked whether you had JavaScript or not, v4 however will only work with JS-enabled. The site itself however, has been designed to work without JS, I just need to finalise the build so that the final index.html is running the right js-includes. Once that is complete, you'll be able to navigate the site (in full CSS parallax) without any fancy runtimes.
+One step I haven't yet finalised however is the no-js build for the main site. Previously v3 worked whether you had JavaScript or not, v4 however will only work with JS-enabled. The site itself however, has been designed to work without JS, I just need to finalise the build so that the final index.html is running the right includes and initial class names. Once that is complete, you'll be able to navigate the site (in full CSS parallax) without any fancy runtimes.
 
 ## Hosting
 
