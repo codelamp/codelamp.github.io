@@ -60,3 +60,9 @@ img.max-width {
   width: 100%;
   height: auto;
 }
+
+dl > dt { float: left; clear: left; margin-right: 0.5em; margin-left: 0.5em; }
+dl > dd { margin: 0; padding: 0; padding-left: 2em; }
+
+dl > dt.done { color: darkgreen; }
+dl > dt.todo { color: darkred; }
