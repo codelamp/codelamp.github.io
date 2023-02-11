@@ -92,19 +92,19 @@ Each time the landscape is generated from that seed, it will be the same. So far
   </ul>
   <div class="panels" style="">
     <div id="iframe-grass" style="display: block;" class="active">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html?seed=bumpy" style="width: 100%; height: 300px;" scrolling="no"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/blog/generation/landscape.html?seed=bumpy" style="width: 100%; height: 300px;" scrolling="no"></iframe>
     </div>
     <div id="iframe-shadow" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&tex=darkTexture" style="width: 100%; height: 300px;" scrolling="no"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&tex=darkTexture" style="width: 100%; height: 300px;" scrolling="no"></iframe>
     </div>
     <div id="iframe-nosmooth" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&smooth=0" style="width: 100%; height: 300px;" scrolling="no"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&smooth=0" style="width: 100%; height: 300px;" scrolling="no"></iframe>
     </div>
     <div id="iframe-smooth2" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&smooth=2" style="width: 100%; height: 300px;" scrolling="no"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/blog/generation/landscape.html?seed=bumpy&smooth=2" style="width: 100%; height: 300px;" scrolling="no"></iframe>
     </div>
     <div id="iframe-random" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html" style="width: 100%; height: 300px;" scrolling="no"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/blog/generation/landscape.html" style="width: 100%; height: 300px;" scrolling="no"></iframe>
     </div>
   </div>
 </div>
