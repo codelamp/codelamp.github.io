@@ -19,7 +19,7 @@
   </section>
   <section class="recent-posts">
     <ul class="recent-posts">
-      {% for post in site.posts limit 4 %}
+      {% for post in site.posts limit: 4 %}
         <li class="post-excerpt">
           {{ post.excerpt }}
           <a class="read-more" href="{{ post.url }}">Read more &gt;&gt;</a>
