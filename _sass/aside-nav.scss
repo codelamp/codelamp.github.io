@@ -1,11 +1,12 @@
 aside.nav {
   position: fixed;
-  width: 400px;
+  width: 420px;
   margin: 0;
   padding: 0;
   top: 0;
   bottom: 0;
   z-index: 200;
+  pointer-events: none;
 }
 
 aside.nav .inner {
@@ -17,10 +18,12 @@ aside.nav .inner {
   border-right: 2px dotted #fff;
   z-index: 2;
   box-shadow: 0 0 20px #000;
+  pointer-events: auto;
 }
 
 aside.nav .padding {
   padding: 20px;
+  padding-top: 0;
 }
 
 aside.nav h2 {
@@ -92,6 +95,8 @@ section.recent-posts li.post-link {
   white-space: nowrap;
   font-size: 9pt;
   margin-bottom: 0.3em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 section.recent-posts li.nav-link a,

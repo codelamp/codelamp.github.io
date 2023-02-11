@@ -1,0 +1,31 @@
+.header-nav {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+}
+
+.header-nav h2 {
+    display: none;
+}
+
+.header-nav .nav-link {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 8px;
+    border: 2px solid rgba(180, 200, 255, 0.2);
+}
+
+.header-nav a:hover {
+    border: 2px solid rgba(180, 200, 255, 0.8);
+}

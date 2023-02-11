@@ -34,6 +34,7 @@ section.comments {
 
 section.intro {
   color: #fff;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
 }
 
 section.intro p {
@@ -172,6 +173,7 @@ blockquote.note {
   max-width: 250px;
 }
 
+@import "header-nav";
 @import "aside-nav";
 @import "posts";
 @import "tabs";
