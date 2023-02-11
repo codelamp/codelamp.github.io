@@ -276,19 +276,19 @@ To see an example of this fade code in action, click the "Mixed" tab below.
   </ul>
   <div class="panels" style="">
     <div id="iframe-grass" style="display: block;" class="active">
-      <iframe src="http://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy" style="width: 100%; height: 300px;"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy" style="width: 100%; height: 300px;"></iframe>
     </div>
     <div id="iframe-stone" style="display: block;" class="active">
-      <iframe src="http://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=stoneTexture" style="width: 100%; height: 300px;"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=stoneTexture" style="width: 100%; height: 300px;"></iframe>
     </div>
     <div id="iframe-cracked" style="display: block;" class="active">
-      <iframe src="http://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=crackedTexture" style="width: 100%; height: 300px;"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=crackedTexture" style="width: 100%; height: 300px;"></iframe>
     </div>
     <div id="iframe-shadow" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=grassTexture&tex2=crackedTexture" style="width: 100%; height: 300px;"></iframe>
+      <iframe src="https://v4.codelamp.co.uk/create-spritesheet/landscape.html?seed=bumpy&tex=grassTexture&tex2=crackedTexture" style="width: 100%; height: 300px;"></iframe>
     </div>
     <div id="iframe-random" style="display: none; position: static; visibility: visible;" class="">
-      <iframe src="http://codelamp.co.uk/blog/generation/landscape.html" style="width: 100%; height: 300px;"></iframe>
+      <iframe src="https://codelamp.co.uk/blog/generation/landscape.html" style="width: 100%; height: 300px;"></iframe>
     </div>
   </div>
 </div>
